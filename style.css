@@ -1,0 +1,52 @@
+body{
+   background-color: black;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 2rem; 
+}
+ .terminal {
+      white-space: pre-line;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+@keyframes fadeIn{
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.blinking-cursor {
+      display: inline-block;
+      width: 10px;
+      height: 20px;
+      background: #00ff00;
+      animation: blink 1s step-start infinite;
+      margin-left: 5px;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+.line {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      animation: typing 2s steps(30, end) forwards;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    .sspanFade{
+        background-color: gray;
+  color: #00ff00;
+  font-weight: 500;
+  opacity: 0;
+  animation-delay: 6s;
+    }
